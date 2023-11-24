@@ -1,0 +1,8 @@
+steps:
+  - label: ":gradle: :compile:"
+    command: "./gradlew clean compileJava compileScala compileTestJava compileTestScala"
+    key: build
+
+  - label: ":gradle: :test:"
+    command: "./gradlew test"
+    key: test
